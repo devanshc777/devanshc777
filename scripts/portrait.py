@@ -19,6 +19,10 @@ PRESETS = {
     # keep individual teeth apart.
     "avatar": dict(crop=(10, 6, 267, 240), invert=True, n=80, levels=(70, 220, 0.8),
                    sharpen=120, edge_cut=0.55),
+    # devqilin's default identicon (420px fetch: 35px margin, 70px blocks), so
+    # n=60 lands every block on exactly 10x10 cells
+    "identicon": dict(crop=(0, 0, 420, 420), invert=True, n=60, levels=(60, 120, 1.0),
+                      edge_cut=0.5),
     # LinkedIn MUJ blazer photo
     "linkedin": dict(crop=(1225, 2060, 1725, 2560), head=(.18, .16, .69, .82),
                      body=[(.27, .76), (.6, .76), (.69, .86), (1, .98), (1, 1), (0, 1), (0, .98),
